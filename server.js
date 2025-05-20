@@ -97,7 +97,9 @@ server.get("/photos/:id", (req, res) => {
     const imageUrl = getUrlById(id);
     const title = getRandomLatinTitle(2);
     // 201 for created
-    res.status(901).jsonp({
+    // a code for "returned from 9 millions entries" should be a code that couldn't be return from the normal db.json
+    // so a good code will be ?
+    res.status(203).jsonp({
       albumId,
       id,
       title: `${title} #${id}`,
