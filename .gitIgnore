@@ -1,4 +1,5 @@
 # exclude all files in the node_modules directory
 node_modules/
 train_urls.txt
+train_urls.zip
 # train_urls.index.json
