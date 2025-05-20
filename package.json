@@ -5,14 +5,14 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "json:server": "json-server --watch db.json",
+    "json:server": "node server.js",
     "index:urls": "node index_urls.js",
     "replace:urls": "node replace_urls.js"
   },
   "dependencies": {
     "axios": "^1.9.0",
     "cli-progress": "^3.12.0",
-    "json-server": "^1.0.0-beta.3",
+    "json-server": "^0.17.3",
     "node-fetch": "^2.7.0"
   }
 }
