@@ -104,7 +104,7 @@ server.get("/photos/:id", (req, res) => {
       id,
       title: `${title} #${id}`,
       url: imageUrl,
-      image_url: imageUrl,
+      thumbnailUrl: imageUrl,
     });
   } else {
     // 404 for not found
